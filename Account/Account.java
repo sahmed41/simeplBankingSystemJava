@@ -1,14 +1,14 @@
 package Account;
 
-import Users.Customer;
+import Users.*;
 
-public class Account {
+public class Account implements IAccount {
     private String number;
-    private Customer holder; 
+    private User holder; 
     private double balance;
     public double miminumBalance;
 
-    public Account(String number, Customer holder, double initialDeposit) {
+    public Account(String number, User holder, double initialDeposit) {
         this.number = number;
         this.holder = holder;
         balance = initialDeposit;
@@ -19,7 +19,7 @@ public class Account {
         return number;
     }
 
-    public Customer getHolder() {
+    public User getHolder() {
         return holder;
     }
 

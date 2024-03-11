@@ -14,7 +14,7 @@ public class Main {
     public static void main (String[] args) {
         // System.out.println("Hello, world!");
         // LocalDate x = LocalDate.of(1990, Month.JANUARY, 15);
-        Customer cus = new Customer("001","John", "Bow", LocalDate.of(1978, 2, 3), "ood", "c1111");
+        User cus = new Customer("001","John", "Bow", LocalDate.of(1978, 2, 3), "ood", "c1111");
         Employee emp = new Employee("001","Jack", "Bringer", LocalDate.of(1998, 4, 4), "bbring", "2222");
         Account acc = new Account("111", cus, 10000);
         Account acc2 = new Account("112", cus, 10000);
@@ -31,10 +31,12 @@ public class Main {
 
         for (String i : emp.getAccountInformation(acc).keySet()) {
             System.out.println(i + " - " + emp.getAccountInformation(acc).get(i) );
-          }
+        }
 
         System.out.println(Output.outputJson(emp.getAccountInformation(acc)));
         System.out.println(Output.outputCsv(emp.getAccountInformation(acc)));
+        // System.out.println(emp.getFName());
+        System.out.println("Amber".charAt(0));
         
               
 

@@ -5,7 +5,7 @@ import java.time.LocalDate;
 /**
  * User
  */
-abstract class User {
+public abstract class User {
     
     private String id;
     private String fname;
@@ -45,10 +45,7 @@ abstract class User {
     public String getUserName() {
         return userName;
     };
-    public String getPassword() {
-        return password;
-    };
-
+    
 
     // Setters
 

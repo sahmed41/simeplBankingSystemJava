@@ -5,9 +5,9 @@ import java.time.LocalDate;
 import java.util.HashMap;
 
 // Importing User Defined Packages
-import Account.Account;
+import Account.*;
 
-public class Employee extends User {
+public class Employee extends User implements IEmployeeUser{
 
     public Employee(String id, String fname, String lname, LocalDate dob, String userName, String password) {
         super(id, fname, lname, dob, userName, password);
@@ -28,7 +28,7 @@ public class Employee extends User {
     }
 
     
-    public HashMap<String, String> getAccountInformation(Account account) { // This method returns the informaton of a given account as a hash map
+    public HashMap<String, String> getAccountInformation(IAccount account) { // This method returns the informaton of a given account as a hash map
 
         HashMap<String, String> accountInformation = new HashMap<String, String>();   
         

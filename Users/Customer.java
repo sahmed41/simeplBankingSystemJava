@@ -8,7 +8,7 @@ public class Customer extends User {
         super(id, fname, lname, dob, userName, password);
     }
 
-    // public double getAccountBalance(Account ac) {
+    // public double listAccount(Account ac) {
     //     return ac.getBalance();
     // }
     
