@@ -1,4 +1,5 @@
 # Project 
+This is a simple banking application that is developed to demonstrate my ability to understand OOP cocnepts and SOLID design principles. It does not represent any banking systems in the reald world. 
 
 # OOP Concepts
 Object Oriented Programming (OOP) is a programming paradigm in which problems are modelled as real world objects. Following sections explain how different aspects of the OOP are implemented to this project.
@@ -81,7 +82,7 @@ Interfaces should not force implementing classes to implement something they can
 There is **User** class and **IEmployeeUser** interface.
 **Employee** and **Customer** are child classes of the **User**. Even though there are some additional methods in the **Employee**, **User** class does not force them on **Customer**. Instead those methods moved to an interface called **IEmployeeUser**. Simly, a large interface is broken into an abstract class called **User** and an interface called **IEmployeeUser**.
 
-Picture of USer, Custoerm, Employee, and the Employee interface cl.
+Picture of USer, Custoerm, Employee, and the Employee interface.
 
 
 ## Dependency Inversion Principal
